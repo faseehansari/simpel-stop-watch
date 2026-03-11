@@ -10,16 +10,17 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:aliceblue;
+background:rgb(211, 230, 247);
 }
 
 .box{
+    z-index: 100;
 width: 30vw;
 height: 30vw;
 border-radius: 50%;
-background:white;
+background: #f3e9d5;
 text-align:center;
-box-shadow:0 5px 15px rgba(0, 0, 0, 0.301);
+box-shadow:0 8px 19px rgba(0, 0, 0, 0.466);
 
 display:flex;
 flex-direction:column;
@@ -51,4 +52,49 @@ transition: transform 0.3s ease;
 #ms{
     /* border: 1px solid; */
     font-size: 30px;
+}
+
+.main{
+    width: 33vw;
+    height: 33vw;
+    border: 5px solid transparent;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blueviolet;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    z-index: -10;
+}
+.main2{
+    width: 36vw;
+    height: 36vw;
+    border: 5px solid transparent;
+    border-left: 4px solid  deepskyblue;
+    border-right: 4px solid rgb(87, 51, 158);
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    z-index: -15;
+}
+.BOX{
+    animation: rotate 2s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.BOX-2{
+    animation: rotation 3s infinite linear;
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
