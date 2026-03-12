@@ -1,9 +1,11 @@
 console.log('Hello, world');
 let anmt1 =document.querySelector(".main")
 let anmt2 =document.querySelector(".main2")
+let anmt3 =document.querySelector(".main3")
+let anmt4 =document.querySelector(".main4")
 
-console.log(anmt1);
-console.log(anmt2);
+// console.log(anmt1);
+// console.log(anmt2);
 
 let hour = document.querySelector(".hour")
 let mint = document.querySelector(".mint")
@@ -28,7 +30,9 @@ resetBtn.addEventListener("click", resetTimer)
 function startTimer(){
 
     anmt1.classList.add("BOX")
+    anmt4.classList.add("BOX")
     anmt2.classList.add("BOX-2")
+    anmt3.classList.add("BOX-2")
 
     if(interval !== null){
         return
@@ -87,7 +91,9 @@ function startTimer(){
 function stopTimer(){
 
        anmt1.classList.remove("BOX")
+       anmt4.classList.remove("BOX")
     anmt2.classList.remove("BOX-2")
+    anmt3.classList.remove("BOX-2")
     clearInterval(interval)
     interval = null
 }
